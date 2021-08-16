@@ -1,0 +1,172 @@
+{
+    "home": [{
+            "title": "Bagaimana cara mendaftar di Prospeku? ",
+            "content": "Anda hanya perlu memasukkan nomor ponsel, lalu verifikasi dengan kode OTP. Setelah itu Anda sebagai pemilik akun akan diminta memasukkan data profil utama berupa nama, email, dan password. Data tambahan lain bisa Anda isi di lain waktu."
+        },
+
+        {
+            "title": "Apakah penggunaan Prospeku berbayar?",
+            "content": "Penggunaan Prospeku gratis pada 6 bulan pertama, kemudian selanjutnya diberlakukan sistem berlangganan dengan harga seperti yang tertera di <a class=\"text-primary\" href=\"/premium\">halaman berikut</a>."
+        },
+
+        {
+            "title": "Bagaimana jika ada hal yang ingin saya tanyakan mengenai Prospeku?",
+            "content": "Anda bisa menghubungi tim Prospeku dari aplikasi dengan cara membuka menu samping → (insert icon) Hubungi kami. Anda juga bisa mengirimkan email pertanyaan ke <a class=\"text-primary\" href=\"mailto:halo@prospeku.com\">halo@prospeku.com</a>."
+        },
+
+        {
+            "title": "Apakah saya bisa memberikan masukan untuk fitur-fitur yang berguna untuk saya?",
+            "content": "Tentu saja! Kami dengan senang hati akan menerima saran dan masukan yang bisa memudahkan pekerjaan Anda sehari-hari. Silakan hubungi tim Prospeku lewat aplikasi, buka menu samping → (insert icon) Hubungi kami. Anda juga bisa mengirimkan email ke <a class=\"text-primary\" href=\"mailto:halo@prospeku.com\">halo@prospeku.com</a>. Kemudahan dan kepuasan Anda dalam menggunakan Prospeku adalah prioritas kami. ☺"
+        }
+
+    ],
+    "general": [{
+            "title": "Bagaimana cara mendaftar di Prospeku? ",
+            "content": "Anda hanya perlu memasukkan nomor ponsel, lalu verifikasi dengan kode OTP. Setelah itu Anda sebagai pemilik akun akan diminta memasukkan data profil utama berupa nama, email, dan password. Data tambahan lain bisa Anda isi di lain waktu."
+        },
+
+        {
+            "title": "Bagaimana jika saya lupa password?",
+            "content": "Anda bisa pilih Lupa Password ketika login, lalu masukkan no ponsel. Kemudian, Anda akan mendapat kode OTP, lalu masukkan kode OTP tersebut dan buat password baru."
+        },
+
+        {
+            "title": "Apakah penggunaan Prospeku berbayar?",
+            "content": "Penggunaan Prospeku gratis pada 6 bulan pertama, kemudian selanjutnya diberlakukan sistem berlangganan dengan harga seperti yang tertera di <a class=\"text-primary\" href=\"/premium\">halaman berikut</a>."
+        },
+
+        {
+            "title": "Apakah pengajuan pinjaman dari Prospeku langsung terhubung ke jaringan bank?",
+            "content": "Saat ini Prospeku baru bekerja sama dengan 1 bank untuk pengajuan pinjaman dan terhubung langsung ke bank tersebut. Ke depannya, Prospeku akan menambahkan bank partner lain untuk memperkaya pilihan produk pinjaman."
+        },
+
+        {
+            "title": "Apakah saya perlu memasukkan pin dan password setiap kali membuka aplikasi Prospeku?",
+            "content": "Untuk saat ini, Anda tidak perlu memasukkan pin dan password tiap kali membuka aplikasi. Pin dan password digunakan saat pertama kali mendaftar atau melakukan login ulang."
+        },
+
+        {
+            "title": "Bagaimana menjamin bahwa aplikasi Prospeku di HP saya tidak gampang dibuka oleh orang lain?",
+            "content": "Untuk menjamin aplikasi Prospeku tidak dibuka oleh orang lain, pastikan kode keamanan HP Anda sebagai pemilik akun tidak diketahui oleh orang (teman atau hagen) lain."
+        },
+
+        {
+            "title": "Apakah profil saya di Prospeku bisa dilihat oleh agen lain dan calon pembeli?",
+            "content": "Tidak bisa. Profil di aplikasi Prospeku hanya bisa dilihat oleh pemilik akun. Semua data yang tersimpan adalah aset pemilik akun dan menjadi tanggung jawab kami untuk menjaga keamanan data setiap pengguna, sehingga merasa nyaman dalam menggunakan aplikasi."
+        },
+
+        {
+            "title": "Bagaimana jika ada hal yang ingin saya tanyakan mengenai Prospeku?",
+            "content": "Anda bisa menghubungi tim Prospeku dari aplikasi dengan cara membuka menu samping → (insert icon) Hubungi kami. Anda juga bisa mengirimkan email pertanyaan ke <a class=\"text-primary\" href=\"mailto:halo@prospeku.com\">halo@prospeku.com</a>."
+        },
+
+        {
+            "title": "Apakah saya bisa memberikan masukan untuk fitur-fitur yang berguna untuk saya?",
+            "content": "Tentu saja! Kami dengan senang hati akan menerima saran dan masukan yang bisa memudahkan pekerjaan Anda sehari-hari. Silakan hubungi tim Prospeku lewat aplikasi, buka menu samping → (insert icon) Hubungi kami. Anda juga bisa mengirimkan email ke <a class=\"text-primary\" href=\"mailto:halo@prospeku.com\">halo@prospeku.com</a>. Kemudahan dan kepuasan Anda dalam menggunakan Prospeku adalah prioritas kami. ☺"
+        }
+    ],
+
+    "kontak": [{
+            "title": "Seberapa aman data kontak yang disalin dari HP saya ke aplikasi Prospeku?",
+            "content": "Data kontak Anda sebagai pemilik akun akan tersimpan dengan aman di server Prospeku. Kami memiliki kebijakan privasi yang menjamin data pengguna tetap aman dan tidak tersebar ke tempat lain."
+        },
+
+        {
+            "title": "Apakah ada pemberitahuan/notifikasi untuk agenda yang akan datang?",
+            "content": "Ada, pemberitahuan atau notifikasi akan muncul di pagi hari apabila di hari tersebut Anda memiliki jadwal agenda dengan calon pelanggan."
+        },
+
+        {
+            "title": "Apakah ada pembeda untuk klien yang pemilik/owner dan klien yang pembeli/buyer (secondary market)?",
+            "content": "Untuk saat ini, klasifikasi kontak hanya untuk pembeli/buyer. Ke depannya, Prospeku akan menambahkan kategori pemilik property/property owner, ditunggu ya! ☺"
+        },
+
+
+        {
+            "title": "Apa fungsi kontak tak terpakai?",
+            "content": "Kontak tak terpakai adalah kontak yang sudah tidak Anda gunakan lagi karena sudah tidak bisa atau gagal diprospek. Daftar kontak tak terpakai bisa Anda kembalikan ke kontak utama, apabila suatu saat kontak tersebut menjadi prospek potensial untuk Anda."
+        },
+
+        {
+            "title": "Apakah agenda bisa langsung diatur untuk alarm pengingat/reminder?",
+            "content": "Untuk saat ini belum bisa. Ke depannya, pengembangan Prospeku akan menambahkan pengaturan pengingat/reminder, ditunggu ya! ☺"
+        },
+
+        {
+            "title": "Apa bedanya “prospek” dan “pelangganku”?",
+            "content": "Prospek adalah calon pelanggan yang potensial untuk membeli properti yang Anda tawarkan. Pelangganku adalah pelanggan yang pernah membeli propertimu dan memiliki potensi untuk ditawarkan properti lain."
+        },
+
+        {
+            "title": "Apabila HP saya hilang, apakah data kontak saya di Prospeku juga hilang?",
+            "content": "Tenang saja, data kontak Anda tidak hilang dan tetap aman tersimpan selama login menggunakan ID Anda sebagai pengguna Prospeku."
+        },
+
+        {
+            "title": "Apa yang dimaksud dengan ‘lokasi yang diinginkan’?",
+            "content": "Lokasi yang diinginkan adalah preferensi lokasi properti yang dicari oleh prospek atau pelanggan/customer Anda."
+        },
+
+        {
+            "title": "Apakah saya bisa memasukkan foto profil klien?",
+            "content": "Untuk saat ini belum bisa, tapi ke depannya fitur ini akan dikembangkan."
+        }
+    ],
+
+    "listing": [{
+            "title": "Apakah listing yang saya masukkan di Prospeku bisa dilihat dan dicari oleh orang lain (calon pembeli ataupun agen lain)? ",
+            "content": "Saat ini, listing yang Anda masukkan hanya bisa terlihat oleh Anda sebagai pemilik akun, namun Prospeku juga memiliki rencana untuk mengembangkan fitur listing yang bisa terhubung dengan berbagai website, sehingga listing yang ada di aplikasi Prospeku bisa juga ditampilkan di website listing."
+        },
+
+        {
+            "title": "Apakah kita bisa melihat listing dari agen2 lain?",
+            "content": "Untuk saat ini belum bisa. Ke depannya, kami berencana mengembangkan fitur untuk bisa berbagi listing dengan agen lain untuk saling membantu dalam berjualan."
+        },
+
+        {
+            "title": "Keterangan/deskripsi properti yang lebih lengkap bisa ditulis di mana?",
+            "content": "Saat ini belum ada, tunggu pengembangan Prospeku selanjutnya ya!"
+        },
+
+        {
+            "title": "Apakah listing di dalam aplikasi bisa dibagikan langsung ke media sosial?",
+            "content": "Untuk saat ini belum bisa. Ke depannya Prospeku berencana mengembangkan fitur untuk bisa membagikan listing ke WhatsApp, Facebook, dan terhubung ke media sosial lainnya."
+        },
+
+        {
+            "title": "Apa fungsi “Listing tak terpakai”?",
+            "content": "Listing tak terpakai adalah listing yang sudah terjual atau tidak jadi Anda jual. Jangan khawatir, ke depannya Anda bisa mengubah status listing tak terpakai menjadi aktif kembali."
+        }
+    ], 
+
+    "financing": [{
+        "title": "Apakah kita bisa simulasi perhitungan KPR terlebih dahulu?",
+        "content": "Saat ini belum bisa. Tapi jangan khawatir karena ke depannya simulasi perhitungan KPR akan jadi fitur yang Prospeku kembangkan."
+    },
+
+    {
+        "title": "Apakah pengguna bisa melakukan BI checking sendiri?",
+        "content": "Tidak bisa. BI Checking hanya dilakukan oleh pihak bank partner. Prospeku sebagai penyedia aplikasi hanya bisa memperoleh hasil akhir apakah KPR yang diajukan pengguna statusnya diterima atau ditolak dari bank terkait."
+    },
+
+    {
+        "title": "Apakah tingkat suku bunga KPR akan otomatis di-update sesuai dengan promo bank?",
+        "content": "Ya, informasi tingkat suku bunga akan otomatis ter-update mengikuti produk KPR terbaru di setiap bank."
+    },
+
+    {
+        "title": "Apakah semua bank akan ada di sini?",
+        "content": "Ke depan, kami akan menjalin kerja sama dengan berbagai bank untuk menambah pilihan produk KPR."
+    },
+
+    {
+        "title": "Apakah bisa menambahkan program KPR sendiri (misalnya bank bekerjasama dengan developer atau agen properti)?",
+        "content": "Belum bisa, tapi jangan khawatir karena ke depannya fitur ini akan dikembangkan."
+    },
+
+    {
+        "title": "Apakah status pengajuan pinjaman harus dicek secara manual, atau otomatis ter-update di aplikasi Prospeku?",
+        "content": "Status pengajuan pinjaman masih harus Anda cek secara manual, belum otomatis."
+    }
+    ]
+}

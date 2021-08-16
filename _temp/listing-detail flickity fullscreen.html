@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,shrink-to-fit=no"
+  />
+  <meta name="title" content="Prospeku" />
+  <meta name="description" content="Prospeku" />
+  <meta name="author" content="Prospeku Team" />
+  <meta name="og:image" content="assets/img/img-home/img-home@2x.jpg" />
+  <title>Prospeku | Listing Detail</title>
+  <link rel="shortcut icon" href="favico.png" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <!-- <link href="assets/styles/main.min.css" rel="stylesheet"/> -->
+  <link href="assets/styles/listing-detail.css" rel="stylesheet" />
+  <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+    crossorigin="anonymous"
+  />
+  <meta name="viewport" content="width=device-width,user-scalable=no" />
+
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+  />
+
+  <!--  Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KL83PS6");
+  </script>
+  <!--  End Google Tag Manager -->
+  <body style="font-family: Montserrat">
+    <!--SemiBold-->
+
+    <div class="container-fluid">
+      <!-- title&profile -->
+      <div class="row pt-4 pb-2">
+        <div class="col-4">
+          <div
+            id="ctnt-img-top"
+            class="card responsive"
+            data-toggle="modal"
+            data-target="#propertyModal"
+          >
+            <img
+              id="pro-img"
+              class="card-image"
+              src=""
+              alt="properties"
+              height="100"
+              width="100"
+            />
+            <div class="card-caption button-center">
+              <button
+                id="pro-n-img"
+                class="btn btn-foto desc-location"
+                data-toggle="modal"
+                data-target="#propertyModal"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="no-padding">
+            <h4 id="pro-name" class="desc-title"></h4>
+            <p id="pro-address" class="desc-location"></p>
+            <p id="pro-price" class="desc-price"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- list of information -->
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="ul-property">
+            <li><strong>Luas Tanah</strong> <span id="pro-floor"></span></li>
+            <li>
+              <strong>Luas Bangunan</strong> <span id="pro-building"></span>
+            </li>
+            <li><strong>Kamar Tidur</strong> <span id="pro-rooms"></span></li>
+            <li>
+              <strong>Kamar Mandi</strong> <span id="pro-bathrooms"></span>
+            </li>
+            <li>
+              <strong>Sertifikat</strong> <span id="pro-certificate"></span>
+            </li>
+            <li>
+              <strong>Deskripsi</strong><br />
+              <span id="pro-description"></span
+              ><span id="see-more-dots">...</span
+              ><span onclick="myFunction()" id="see-more-btn"
+                >Lihat lebih banyak</span
+              ><span id="see-more"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- contact card -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-contact mb-4">
+            <div class="card-body">
+              <p class="desc-location pb-2">Kontak Agen</p>
+              <h5 id="pro-owner" class="desc-title"></h5>
+              <p id="pro-phone" class="desc-price"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="propertyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <!-- test slick carousel mobile -->
+            <!-- js-flickity data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }' -->
+            <div class="listing-detail-slider-for mb-4"></div>
+            <div class="listing-detail-slider-nav mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KL83PS6"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!--  End Google Tag Manager (noscript) -->
+    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="assets/scripts/listing-detail.js"
+    ></script>
+
+    <!-- JavaScript -->
+    <script
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="assets/scripts/accounting.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      // function to see more description
+      function myFunction() {
+        var dots = document.getElementById("see-more-dots");
+        var moreText = document.getElementById("see-more");
+        var btnText = document.getElementById("see-more-btn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          // btnText.innerHTML = "Read less";
+          btnText.style.display = "none";
+          moreText.style.display = "inline";
+        }
+      }
+
+      // lowercase exc 1st letter
+      function formatString(str) {
+        return str
+          .replace(/(\B)[^ ]*/g, match => match.toLowerCase())
+          .replace(/^[^ ]/g, match => match.toUpperCase());
+      }
+
+      // function to check if attr ex
+      function checkProperty(p, key) {
+        if (p.hasOwnProperty(key)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        document.getElementsByTagName("body")[0].classList.add("is-mobile");
+      } else {
+        document.getElementsByTagName("body")[0].classList.add("is-desktop");
+      }
+    </script>
+
+    <script type="text/javascript">
+      var certificateList = {
+        0: "UNSPECIFIED",
+        1: "SHM - Sertifikat Hak Milik",
+        2: "HGB - Hak Guna Bangun",
+        3: "Lainnya (PPJB,Girik, Adat,dll)"
+      };
+
+      // var baseUrl = "https://api-dev.onelabs.co";
+      // var baseUrl = "https://api-uat.onelabs.dev";
+      var baseUrl = "https://api.onelabs.co";
+      var token = "";
+
+      // ajax to get token
+      $.ajax({
+        url: baseUrl + "/apps/v1/initials",
+        headers: {
+          "X-Client-Id": "prospeku.web",
+          "X-Client-Version": "1.0.0",
+          "X-Device-Id": "prospekuweb"
+        },
+        success: function(result) {
+          token = result.content.token;
+
+          // var url = window.location.pathname;
+          // var id = url.substring(url.lastIndexOf('/') + 1);
+          var url = new URL(window.location);
+          var search_params = new URLSearchParams(url.search);
+          var idProp = "";
+
+          // iterate over the query parameters
+          for (var i of search_params) {
+            // i an an array
+            // i[0] => name
+            // i[1] => value
+            // console.log(i[0] + ' : ' + i[1]);
+
+            idProp = i[1]; // '1OMVnzjL5Yltv6WUNVGtJLPszuD'; // get from url
+          }
+
+          // ajax to get data
+          $.ajax({
+            url: baseUrl + "/properties/v2/properties/" + idProp,
+
+            headers: {
+              "X-Client-Id": "prospeku.web",
+              "X-Device-Id": "browser", // prospekuweb
+              "X-Auth-Token": token
+            },
+            success: function(result) {
+              // console.log('success, result: ', result);
+
+              // display to html
+              var p = result.content.property;
+
+              document.getElementById("pro-name").innerHTML = checkProperty(
+                p,
+                "name"
+              )
+                ? p.name
+                : "-";
+              // document.getElementById("pro-address").innerHTML = p.district_id;
+              document.getElementById("pro-price").innerHTML = checkProperty(
+                p,
+                "selling_price"
+              )
+                ? accounting.formatMoney(
+                    p.selling_price,
+                    "Rp ",
+                    0,
+                    ".",
+                    ",",
+                    "%s%v"
+                  )
+                : "-";
+
+              document.getElementById("pro-img").src = checkProperty(
+                p,
+                "images"
+              )
+                ? p.images[0].image_url
+                : "#";
+              document.getElementById("pro-n-img").innerHTML = checkProperty(
+                p,
+                "images"
+              )
+                ? p.images.length + " Foto"
+                : "-";
+
+              // validate value
+              var floorArea = checkProperty(p, "floor_area")
+                ? p.floor_area != null && p.floor_area > 0
+                  ? accounting.formatNumber(p.floor_area, 0, ".", ",") +
+                    " m<sup>2</sup>"
+                  : "-"
+                : "-";
+              var buildingArea = checkProperty(p, "building_area")
+                ? p.building_area != null && p.building_area > 0
+                  ? accounting.formatNumber(p.building_area, 0, ".", ",") +
+                    " m<sup>2</sup>"
+                  : "-"
+                : "-";
+              var numberOfRooms = checkProperty(p, "number_of_rooms")
+                ? p.number_of_rooms != null && p.number_of_rooms > 0
+                  ? accounting.formatNumber(p.number_of_rooms, 0, ".", ",")
+                  : "-"
+                : "-";
+              var numberOfBathrooms = checkProperty(p, "number_of_bathrooms")
+                ? p.number_of_bathrooms != null && p.number_of_bathrooms > 0
+                  ? accounting.formatNumber(p.number_of_bathrooms, 0, ".", ",")
+                  : "-"
+                : "-";
+
+              document.getElementById("pro-floor").innerHTML = floorArea;
+              document.getElementById("pro-building").innerHTML = buildingArea;
+              document.getElementById("pro-rooms").innerHTML = numberOfRooms;
+              document.getElementById(
+                "pro-bathrooms"
+              ).innerHTML = numberOfBathrooms;
+              document.getElementById(
+                "pro-certificate"
+              ).innerHTML = checkProperty(p, "certificate")
+                ? certificateList[p.certificate]
+                : "-";
+
+              // description, count length, add see more after 200 chars
+              var descr = checkProperty(p, "depiction") ? p.depiction : "";
+              if (descr.length == 0) {
+                document.getElementById("see-more-btn").style.display = "none"; // , , #see-more-dots, #see-more
+                document.getElementById("see-more-dots").style.display = "none";
+
+                document.getElementById("pro-description").innerHTML = "-"; // p.description;
+              } else {
+                if (descr.length > 200) {
+                  var res = descr.slice(0, 200);
+                  var more = descr.slice(200, 1200); // max is 1200
+
+                  document.getElementById("pro-description").innerHTML = res; // p.description;
+                  document.getElementById("see-more").innerHTML = more; // p.description;
+                } else {
+                  // no need to btn see more
+                  document.getElementById("see-more-btn").style.display =
+                    "none"; // , , #see-more-dots, #see-more
+                  document.getElementById("see-more-dots").style.display =
+                    "none";
+
+                  document.getElementById("pro-description").innerHTML = descr; // p.description;
+                }
+              }
+
+              document.getElementById("pro-owner").innerHTML = checkProperty(
+                p,
+                "owner"
+              )
+                ? p.owner.name
+                : "-";
+              document.getElementById("pro-phone").innerHTML = checkProperty(
+                p,
+                "owner"
+              )
+                ? checkProperty(p.owner, "phones")
+                  ? p.owner.phones[0].number
+                  : "-"
+                : "-";
+
+              // carousel imgs
+              for (var i = 0; i < p.images.length; i++) {
+                var sliderfor =
+                  '<div class="slider-for-container-img">' +
+                  "<img" +
+                  '    src="' +
+                  p.images[i].image_url +
+                  '"' +
+                  '    alt="properties"' +
+                  // '    height="400"' +
+                  // '    width="240"' +
+                  '    style="margin: 0 auto;" />' +
+                  "</div>";
+                $(".listing-detail-slider-for").append($(sliderfor));
+
+                var slidernav =
+                  '<div class="slider-nav-container-img">' +
+                  "<img" +
+                  '    src="' +
+                  p.images[i].image_url +
+                  '"' +
+                  '    alt="properties"' +
+                  '    height="60"' +
+                  '    width="60"' +
+                  '    style="margin: 0 auto;" />' +
+                  "</div>";
+                $(".listing-detail-slider-nav").append($(slidernav));
+              }
+
+              // ajax to get district name
+              var idDist = p.district_id;
+              $.ajax({
+                url: baseUrl + "/locations/v2/districts/tree?id=" + idDist,
+
+                headers: {
+                  "X-Client-Id": "prospeku.web",
+                  "X-Device-Id": "browser", // prospekuweb
+                  "X-Auth-Token": token
+                },
+                success: function(result) {
+                  // console.log('success get district, result: ', result);
+
+                  var d = result.content.items[0];
+                  var districtName = d.city.name + ", " + d.district.name; // + ', ' + d.province.name;
+                  // lowercase exc 1st letter
+                  document.getElementById(
+                    "pro-address"
+                  ).innerHTML = formatString(districtName);
+                }
+              });
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+.text {
+    &-justify {
+      text-align: justify !important;
+    }
+    &-nowrap {
+      white-space: nowrap !important;
+    }
+    // Transformation
+    &-lowercase {
+      text-transform: lowercase !important;
+    }
+    &-uppercase {
+      text-transform: uppercase !important;
+    }
+    &-capitalize {
+      text-transform: capitalize !important;
+    }
+    // Contextual colors
+    &-white {
+      color: @white !important;
+    }
+    &-black {
+      color: @black !important;
+    }
+    &-green {
+      color: @green !important;
+    }
+    &-light-green {
+        color: @light-green !important;
+      }
+    // Text decoration
+    &-decoration-none {
+      text-decoration: none !important;
+    }
+}
+
+.text {
+  // Responsive alignment
+  &-left {
+    text-align: left !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+  &-center {
+    text-align: center !important;
+  }
+}
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+
+  .text-sm-right {
+    text-align: right !important;
+  }
+
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+
+  .text-md-right {
+    text-align: right !important;
+  }
+
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+
+  .text-lg-right {
+    text-align: right !important;
+  }
+
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1170px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+
+  .text-xl-right {
+    text-align: right !important;
+  }
+
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+  
+// Weight and italics
+.font {
+    &-weight-light {
+      font-weight: lighter !important;
+    }
+    &-weight-normal {
+      font-weight: normal !important;
+    }
+    &-weight-semi-bold {
+      font-weight: 600 !important;
+    }
+    &-weight-bold {
+      font-weight: bold !important;
+    }
+    &-italic {
+      font-style: italic !important;
+    }
+}

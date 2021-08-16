@@ -1,0 +1,71 @@
+/*====== All Custom Files Include Here ======*/
+@import './less/button.less';
+@import './less/collapse.less';
+@import './less/tables.less';
+@import './less/tabs.less';
+@import './less/utilities.less';
+@import './less/variables.less';
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-layout {
+  background: #fff;
+}
+
+.ant-back-top div {
+  background: white;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  span {
+    position: relative;
+    top: calc(50% - 18px);
+  }
+}
+
+.ant-pagination-options {
+  display: none;
+}
+
+.ant-layout-content {
+  
+}
+
+@media (max-width: 767px) {
+  .ant-layout-content {
+    padding: 0 16px;
+  }
+  .ant-back-top div {
+    height: 40px;
+    width: 40px;
+
+    span {
+      top: calc(50% - 30px);
+    }
+  }  
+}

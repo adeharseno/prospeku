@@ -1,0 +1,189 @@
+// .ant-layout-content {
+//     // background-image: none !important;
+// }
+h2.ant-typography, h3.ant-typography, h4.ant-typography {
+    color: #246755;
+    font-weight: bold;
+}
+.ant-section-top {
+    .wrap-bg-title {
+        color: #246755;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: bold;
+
+        span {
+            color: #41a380;
+            font-style: italic;
+        }
+    }
+
+    a {
+        margin-right: 20px;
+        
+        img {
+            height: 42px;
+        }
+    }
+}
+.banner {
+    margin: 50px 0 !important;
+
+    .center-vertical {
+        margin-bottom: 0;
+    }
+}
+.card {
+    &--main {
+        background: transparent;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            background: #dfe9da;
+            border-radius: 24px;
+            height: auto;
+            width: 300px;
+            position: absolute;
+            top: 25px;
+            bottom: 25px;
+            left: -25px;
+            z-index: 0;
+        }
+        &::after {
+            content: '';
+            display: block;
+            background: #dfe9da;
+            border-radius: 24px;
+            height: auto;
+            width: 300px;
+            position: absolute;
+            top: 25px;
+            bottom: 25px;
+            right: -25px;
+            z-index: 0;
+        }
+
+        .ant-card-body {
+            position: relative;
+            z-index: 2;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        h4 {
+            color: #246755;
+        }
+    }
+    &--kontak {
+        background: transparent;
+        padding: 0 100px;
+
+        .ant-card-body {
+            background-image: url('../../assets/images/group.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 24px;
+            padding: 50px 100px;
+        }
+
+        .ant-typography {
+            color: white;
+        }
+        .ant-btn {
+            margin-right: 22px;
+            min-width: 158px;
+            font-weight: 600;
+        }
+    }
+}
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+.title--custom {
+    font-style: italic;
+    color: #9dbda5 !important;
+}
+.list {
+    &--standard {
+        padding-left: 24px;
+
+        li {
+            position: relative;
+            font-size: 16px;
+            color: #696969;
+            margin-bottom: 8px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -18px;
+                top: 9px;
+                width: 8px;
+                height: 8px;
+                background-color: #f4b75f;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+            }
+        }
+    }
+    &--partner {
+        padding: 0;
+        margin: 0;
+    
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    h2.ant-typography, h3.ant-typography, h4.ant-typography {
+        font-size: 20px;
+    }
+
+    .ant-section-top {
+        .wrap-bg-title {
+            font-size: 24px !important;
+        }
+        a {
+            margin-right: 14px !important;
+        }
+    }
+    .banner {
+    
+        .center-vertical {
+            margin-bottom: 25px;
+        }
+    }
+    .card {
+        &--main {
+    
+            &::before {
+                width: 100px !important;
+                left: -10px !important;
+            }
+            &::after {
+                width: 100px !important;
+                right: -10px !important;
+            }
+        }
+        &--kontak {
+            padding: 0 !important;
+
+            .ant-card-body {
+                padding: 30px 10px !important;
+            }
+            .ant-btn {
+                margin-right: 3px !important;
+            }
+        }
+    }
+}

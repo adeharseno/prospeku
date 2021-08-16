@@ -1,0 +1,205 @@
+.ant-layout-content {
+    background-image: none !important;
+}
+h2.ant-typography, h3.ant-typography, h4.ant-typography {
+    color: #246755;
+    font-weight: bold;
+}
+.ant-section-top {
+    .wrap-bg-title {
+        color: #246755;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: bold;
+
+        span {
+            color: #41a380;
+            font-style: italic;
+        }
+    }
+
+    a {
+        margin-right: 20px;
+        
+        img {
+            height: 42px;
+        }
+    }
+}
+.card {
+    &--main {
+        background: transparent;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            background: #dfe9da;
+            border-radius: 24px;
+            height: auto;
+            width: 300px;
+            position: absolute;
+            top: 25px;
+            bottom: 25px;
+            left: -25px;
+            z-index: 0;
+        }
+        &::after {
+            content: '';
+            display: block;
+            background: #dfe9da;
+            border-radius: 24px;
+            height: auto;
+            width: 300px;
+            position: absolute;
+            top: 25px;
+            bottom: 25px;
+            right: -25px;
+            z-index: 0;
+        }
+
+        .ant-card-body {
+            position: relative;
+            z-index: 2;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        h4 {
+            color: #246755;
+        }
+    }
+    &--kontak {
+        background: transparent;
+        padding: 0 100px;
+
+        .ant-card-body {
+            background-image: url('../../assets/images/group.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 24px;
+            padding: 50px 100px;
+        }
+
+        .ant-typography {
+            color: white;
+        }
+        .ant-btn {
+            margin-right: 22px;
+            min-width: 158px;
+            font-weight: 600;
+        }
+    }
+}
+.center-vertical {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-bottom: 30px;
+    }
+}
+.title--custom {
+    font-style: italic;
+    color: #9dbda5 !important;
+}
+.list {
+    &--standard {
+        padding-left: 24px;
+
+        li {
+            position: relative;
+            font-size: 16px;
+            color: #696969;
+            margin-bottom: 8px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -18px;
+                top: 9px;
+                width: 8px;
+                height: 8px;
+                background-color: #f4b75f;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+            }
+        }
+    }
+    &--partner {
+        padding: 0;
+        margin: 0;
+    
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 20px;
+        }
+    }
+}
+.image {
+    &--article {
+        margin: 0 auto;
+    }
+}
+.icon {
+    &--article {
+        max-width: 260px;
+        margin: 0 auto 25px;
+
+        img {
+            margin-bottom: 8px;
+        }
+    }
+}
+.separator {
+    text-align: center;
+    background: #c0e5d8;
+    border-radius: 24px;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 40px);
+}
+
+@media (max-width: 576px) {
+    .image {
+        &--article {
+            width: 80%;
+        }
+    } 
+    .separator {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: table;
+        margin: 16px auto;
+        text-align: center;
+    }
+}
+
+.tablink {
+    display: block;
+    text-align: center;
+    margin: 40px 0;
+
+    a {
+        font-weight: 600;
+        color: #236755;
+        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+        padding: 13px 24px;
+        margin: 0 10px;
+
+        &.active {
+            background: #236755;
+            color: white;
+            font-weight: 600;
+        }
+    }
+}

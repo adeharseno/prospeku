@@ -1,0 +1,45 @@
+.ant-article {
+    
+    .card {
+        &--article {
+            border-radius: 8px;
+        }
+    }
+
+    .ant-card {
+        -webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+        box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+
+        &-body {
+            height: 120px;
+            padding: 20px;
+            overflow: hidden;
+
+            @media screen and (max-width: 768px){
+                height: 114px;
+            }
+        }
+
+        &-cover {
+            height: 180px;
+            overflow: hidden;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            img {
+                height: auto;
+            }
+        }
+
+        &-meta-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #0b4233;
+        }
+    }
+
+    .title-article {
+        font-size: 20px;
+        margin-top: 0 !important;
+    }
+}

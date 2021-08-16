@@ -1,0 +1,120 @@
+trigger:
+  - master
+  - develop
+  - refs/tags/*
+
+pr:
+  - develop
+
+resources:
+  repositories:
+  - repository: ndv6
+    type: github
+    endpoint: ndv6
+    name: ndv6/azure-pipelines
+    ref: refs/heads/master
+
+variables:
+  service_name: prospeku-web
+  slack_channel: web_deployment
+
+stages:
+- stage: preparation
+  jobs:
+  - template: job--notification.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      status: starting
+      type: web
+      slack_channel: ${{ variables.slack_channel }}
+
+- stage: test
+  jobs:
+  - template: job--node.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+  - template: job--sonarqube.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      language: nodejs
+  - template: job--notification.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      status: failed
+      condition: failed()
+      slack_channel: ${{ variables.slack_channel }}
+      type: web
+      dependsOn:
+      - node_job
+      - sonarqube_job
+
+- stage: deploy
+  jobs:
+  - template: job--docker.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      language: nodejs
+  - template: job--helm.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      strategy:
+        tags:
+          kubernetesNamespace: onelabs-app
+          kubernetesServiceConnection: onelabs-k8s-prod
+          helmEnv: prod
+          mesh: false
+      dependsOn:
+      - docker_job
+  - template: job--helm.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      kubectlVersion: 1.18.8
+      jobName: _new
+      strategy:
+        develop:
+          kubernetesNamespace: onelabs-app-sit
+          kubernetesServiceConnection: onelabs-k8s-dev-sit-new
+          helmEnv: sit
+          helmValueFile: values-sit-new.yaml
+          mesh: true
+        master:
+          kubernetesNamespace: onelabs-app-uat
+          kubernetesServiceConnection: onelabs-k8s-dev-uat-new
+          helmEnv: uat
+          helmValueFile: values-uat-new.yaml
+          mesh: true
+        # tags:
+        #   kubernetesNamespace: onelabs-app
+        #   kubernetesServiceConnection: onelabs-k8s-prod
+        #   helmEnv: prod
+        #   helmValueFile: values-prod-new.yaml
+        #   mesh: false
+      dependsOn:
+      - docker_job
+  - template: job--notification.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      status: failed
+      condition: failed()
+      slack_channel: ${{ variables.slack_channel }}
+      type: web
+      dependsOn:
+      - helm_job
+      - helm_job_new
+
+- stage: post
+  jobs:
+  - template: job--notification.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      slack_channel: ${{ variables.slack_channel }}
+      status: success
+      type: web
+      condition: succeeded()
+  - template: job--notification.yaml@ndv6
+    parameters:
+      name: ${{ variables.service_name }}
+      slack_channel: ${{ variables.slack_channel }}
+      status: failed
+      type: web
+      condition: failed()

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,shrink-to-fit=no"
+  />
+  <meta name="title" content="Prospeku" />
+  <meta name="description" content="Prospeku" />
+  <meta name="author" content="Prospeku Team" />
+  <meta name="og:image" content="assets/img/img-home/img-home@2x.jpg" />
+  <title>Prospeku | Listing Detail</title>
+  <link rel="shortcut icon" href="favico.png" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <!-- <link href="assets/styles/main.min.css" rel="stylesheet"/> -->
+  <link href="assets/styles/listing-detail.css" rel="stylesheet" />
+  <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+    crossorigin="anonymous"
+  />
+  <meta name="viewport" content="width=device-width,user-scalable=no" />
+  <!--  Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KL83PS6");
+  </script>
+  <!--  End Google Tag Manager -->
+  <body>
+    <div class="container-fluid">
+      <!-- title&profile -->
+      <div class="row pt-4">
+        <div class="col-4">
+          <div id="ctnt-img-top" class="card">
+            <img
+              src="https://placeimg.com/100/100/arch"
+              class="card-image"
+              alt="architecture"
+            />
+            <div class="card-caption">
+              <button
+                class="btn btn-block text-white"
+                data-toggle="modal"
+                data-target="#propertyModal"
+              >
+                8 foto
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <h4 class="desc-title">Perumahan Cluster Clasic Eropa Di Jaka…</h4>
+          <p class="desc-location">Jakarta Pusat</p>
+          <p class="desc-price">Rp 25.160.000.000</p>
+        </div>
+      </div>
+
+      <!-- list of information -->
+      <div class="row">
+        <div class="col-md-12">
+          <p><strong>Luas Tanah</strong> {{ asd }}</p>
+          <p><strong>Luas Bangunan</strong> {{ asd }}</p>
+          <p><strong>Kamar Tidur</strong> {{ asd }}</p>
+          <p><strong>Kamar Mandi</strong> {{ asd }}</p>
+          <p><strong>Sertifikat</strong> {{ asd }}</p>
+          <p>
+            <strong>Deskripsi</strong> • Deskripsi Disewakan Apartemen Taman
+            Melati Full Furnished seperti hotel. Pool View. Fasilitas: - Lantai
+            Parquet - Tempat tidur - Lemari - Meja belajar - TV LED 32' - AC
+            <span id="see-more-dots">...</span>
+            <button
+              onclick="myFunction()"
+              id="see-more-btn"
+              class="btn btn-primary"
+            >
+              Lihat lebih banyak
+            </button>
+            <span id="see-more">
+              - Kulkas - Kompor - Water Heater Apartemen paling dekat dan
+              direkomendasikan untuk mahasiswa UI, maupun lainnya. Area parkir
+              luas. Security 24-jam Mini market Laundry (Kg) Banks, Restaurant,
+              pharmacy ATM Kolam renang Access card for building and elevator.
+              The one and only apartement that have a crossing ladder to UI
+              behind the apartment building. The nearest apartment from UI and
+              some university like University Indonesia, Pancasila University,
+              Gunadarma, Bina Sarana Informatika, UI Train Station, Margonda
+              City Mall, Margonda Town Square, Bunda Margonda Hospital, Gramedia
+              Book Store, 24-hours transportation. Sewa 3 bulan Bayar semua di
+              awal: 10juta Bayar per bulan: 3,5juta, deposit 3,5juta. Sewa 6
+              bulan Bayar semua di awal: 18juta Bayar per bulan: 3juta, deposit
+              3juta Sewa 12 bulan Bayar semua di awal: 35juta Bayar per bulan:
+              3juta, deposit 3juta Minat silakan hubungi wa 08988823757. Terima
+              kasih.</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- contact card -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="desc-location">Kontak Agen</p>
+              <h5 class="desc-title">Astrid Tresna A</h5>
+              <p class="desc-price">0812345678910</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="propertyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <!-- test slick carousel mobile -->
+            <div class="listing-detail-slider-for slick-center mb-4">
+              <div>
+                <img
+                  src="https://placeimg.com/640/480/arch"
+                  alt="architecture"
+                  height="400"
+                  width="240"
+                  style="margin: 0 auto;"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placeimg.com/640/480/animals"
+                  alt="architecture"
+                  height="400"
+                  width="240"
+                  style="margin: 0 auto;"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placeimg.com/640/480/nature"
+                  alt="architecture"
+                  height="400"
+                  width="240"
+                  style="margin: 0 auto;"
+                />
+              </div>
+            </div>
+            <div class="listing-detail-slider-nav slick-center">
+              <div>
+                <img
+                  src="https://placeimg.com/640/480/arch"
+                  alt="architecture"
+                  height="60"
+                  width="60"
+                  style="margin: 0 auto;"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placeimg.com/640/480/animals"
+                  alt="architecture"
+                  height="60"
+                  width="60"
+                  style="margin: 0 auto;"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placeimg.com/640/480/nature"
+                  alt="architecture"
+                  height="60"
+                  width="60"
+                  style="margin: 0 auto;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KL83PS6"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!--  End Google Tag Manager (noscript) -->
+    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+
+    <script type="text/javascript">
+      function myFunction() {
+        var dots = document.getElementById("see-more-dots");
+        var moreText = document.getElementById("see-more");
+        var btnText = document.getElementById("see-more-btn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          // btnText.innerHTML = "Read less";
+          btnText.style.display = "none";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+
+    <script type="text/javascript">
+      // var baseUrl = "https://api-dev.onelabs.co";
+      // var baseUrl = "https://api-uat.onelabs.dev";
+      var baseUrl = "https://api.onelabs.co";
+
+      // ajax to get token
+      $.ajax({
+        url: baseUrl + "/apps/v1/initials",
+        headers: {
+          "X-Client-Id": "akuaktif.web",
+          "X-Client-Version": "1.0.0",
+          "X-Device-Id": "akuaktifweb"
+        },
+        success: function(result) {
+          // alert('success, token: ' + result.content.token);
+          // ajax to get data
+        }
+      });
+    </script>
+  </body>
+</html>

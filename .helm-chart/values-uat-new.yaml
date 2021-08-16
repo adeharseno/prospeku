@@ -1,0 +1,21 @@
+image:
+  repository: onelabscontainerregistry.azurecr.io/prospeku-web
+
+deployment:
+  enabled: true
+
+service:
+  enabled: true
+  mesh: true
+
+proxy:
+  headers:
+    response:
+      set:
+        x-robots-tag: noindex, nofollow, noarchive
+
+gateway:
+  gateway: istio-system/onelabs-app-gateway
+  servers:
+  - hosts:
+    - prospeku-uat.onelabs.dev

@@ -1,0 +1,25 @@
+.btn-primarys-alt {
+    color: white !important; 
+    padding: 0px; 
+    background:#e66860; 
+    height: 48px; 
+    line-height: 48px; 
+    border-radius: 25px; 
+    display: inline-block;
+    margin-right: 8px;
+} 
+.btn-primarys {
+    color: white !important; 
+    padding: 0px; 
+    background: #246755; 
+    height: 48px; 
+    line-height: 48px; 
+    border-radius: 25px; 
+    display: inline-block;
+} 
+@media (max-width: 768px) {
+    .btn-primarys, 
+    .btn-primarys-alt { 
+        display: none; 
+    }
+}

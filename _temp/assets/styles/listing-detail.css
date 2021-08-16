@@ -1,0 +1,219 @@
+/* body */
+body {
+    font-family: "Montserrat-SemiBold";
+}
+body .container-fluid {
+    line-height: 2;
+}
+
+/* card */
+#ctnt-img-top {
+    padding: 0;
+    border-radius: 4px;
+    height: 100px;
+    width: 100px;
+}
+#ctnt-img-top .card-image {
+    width: 100%;
+    /* height: auto; 162px; */
+    border-radius: 4px;
+}
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+#ctnt-img-top .card-caption { /* https://codepen.io/inf3cti0n95/pen/BQJMrL */
+    position: absolute;
+    /* margin-top: -1.5em; */
+    bottom: 0;
+    width: 100%;
+    padding-left: 0;
+    color: #fff;
+    font-size: 2em;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%) !important;
+}
+.button-center {
+    text-align:center;
+}
+#ctnt-img-top .btn-foto {
+    border-radius: 16px;
+    background: white;
+    text-transform: none;
+}
+#ctnt-img-top button {
+    color: #8a8a8a;
+}
+
+/* card desc */
+.desc-title {
+    color: #0b4233;
+    font-size: 18px;
+    margin: 4px 0;
+    font-weight: bold;
+}
+.desc-location {
+    color: #8a8a8a;
+    font-size: 14px;
+    line-height: 1;
+    margin: 4px 0;
+}
+.desc-price {
+    color: #505050;
+    font-size: 18px;
+    line-height: 1;
+    margin: 4px 0;
+}
+#pro-description, #see-more-dots, #see-more {
+    white-space: pre-wrap;
+    display: inline;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+#see-more {
+    display: none;
+}
+#see-more-btn {
+    color: #41a380;
+    font-weight: bold;
+}
+ul.ul-property {
+    padding-inline-start: 20px;
+}
+ul.ul-property strong {
+    font-weight: 600; /* less than 700 bold */
+}
+
+/* card contact */
+.card-contact .card-body {
+    padding: .8rem;
+}
+
+/* modal */
+#propertyModal .modal-dialog {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#propertyModal .modal-header {
+    padding: 0; /* too much padding */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#propertyModal .close {
+    color: white;
+}
+#propertyModal .modal-content {
+    height: auto;
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+    margin: 0;
+    padding: 8px;
+    border-radius: 0;
+    background: black;
+}
+
+/* slider */
+.listing-detail-slider-for .slick-prev, .listing-detail-slider-for .slick-next {
+    background: black;
+    height: 100%; /* full height button */
+    width:  40px;
+}
+.listing-detail-slider-for .slick-prev:before, .listing-detail-slider-for .slick-next:before {
+    font-size: 40px;
+}
+.listing-detail-slider-nav {
+    width: 100%;
+}
+
+.listing-detail-slider-for .flickity-button, .listing-detail-slider-nav .flickity-button {
+    background: transparent;
+    color: white;
+}
+.listing-detail-slider-nav .flickity-button {
+    display: none;
+}
+.listing-detail-slider-for .flickity-prev-next-button.previous {
+    left: -36px;
+}
+.listing-detail-slider-for .flickity-prev-next-button.next {
+    right: -36px;
+}
+.listing-detail-slider-for .flickity-button:hover, .listing-detail-slider-nav .flickity-button:hover {
+    background: none;
+}
+.listing-detail-slider-for .flickity-prev-next-button, .listing-detail-slider-nav .flickity-prev-next-button {
+    height: 100%;
+    border-radius: 0;
+}
+
+#propertyModal .modal-body {
+    height: calc(100vh - 100px) !important;
+    margin-bottom: 70px;
+}
+
+.listing-detail-slider-for {
+    height: 100%;
+}
+
+.listing-detail-slider-for .slider-for-container-img {
+    width: 100%;
+    background: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.listing-detail-slider-for .slider-for-container-img img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.listing-detail-slider-for .flickity-viewport {
+    height: 100% !important;
+}
+
+.listing-detail-slider-nav {
+    padding-bottom: 4px;
+}
+.slider-nav-container-img div:not(.is-selected) { /* full size image */
+    color: green;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+.slider-nav-container-img {
+    background-color:#000;
+    padding: 4px;
+}
+
+.slider-nav-container-img:not(.is-selected) img{
+    opacity: 0.2;
+}
+
+body.is-desktop  > .container-fluid{
+    width: 500px;
+    margin: 0 auto;
+    background: #fafafa;
+    min-height: 100vh;
+}
+
+body.is-desktop{
+    background: #000;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
